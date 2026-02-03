@@ -1,0 +1,6 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder logo - Replace with actual Symoura logo -->
+  <rect x="10" y="10" width="40" height="40" rx="8" fill="#1A3D5C"/>
+  <circle cx="30" cy="30" r="8" fill="#8B6F47"/>
+  <text x="60" y="40" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#1A3D5C">Symoura</text>
+</svg>
