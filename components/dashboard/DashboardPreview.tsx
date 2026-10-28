@@ -3,31 +3,31 @@ import Card from '@/components/ui/Card';
 
 export default function DashboardPreview() {
   const statusCards = [
-    { title: 'Invoices Processed', value: '142', subtitle: 'This month' },
-    { title: 'Time Saved', value: '28h', subtitle: 'Estimated' },
-    { title: 'Pending Approval', value: '3', subtitle: 'Requires action' },
-    { title: 'Exception Rate', value: '2.1%', subtitle: 'Below target' },
+    { title: 'Tasks Processed', value: '1,247', subtitle: 'This month' },
+    { title: 'Time Saved', value: '62h', subtitle: 'Estimated' },
+    { title: 'Awaiting Review', value: '5', subtitle: 'Requires action' },
+    { title: 'Success Rate', value: '97.8%', subtitle: 'Above target' },
   ];
 
   const recentActivity = [
-    { supplier: 'Acme Supplies Ltd', amount: '£1,250', status: 'Received', time: '2 min ago', statusColor: 'text-navy' },
-    { supplier: 'TechCorp Solutions', amount: '£850', status: 'Validated', time: '5 min ago', statusColor: 'text-success' },
-    { supplier: 'Office Essentials', amount: '£2,100', status: 'Approved', time: '12 min ago', statusColor: 'text-success' },
-    { supplier: 'Cloud Services Inc', amount: '£450', status: 'Synced to Xero', time: '18 min ago', statusColor: 'text-neutral-medium-gray' },
+    { source: 'Support Chatbot', detail: 'Order status query resolved', status: 'Completed', time: '2 min ago', statusColor: 'text-success' },
+    { source: 'Document Processing', detail: 'Contract #4821 extracted', status: 'Processing', time: '5 min ago', statusColor: 'text-navy' },
+    { source: 'CRM Automation', detail: 'Lead score updated - Acme Corp', status: 'Completed', time: '12 min ago', statusColor: 'text-success' },
+    { source: 'Data Pipeline', detail: 'Daily warehouse sync complete', status: 'Synced', time: '18 min ago', statusColor: 'text-neutral-medium-gray' },
   ];
 
   const pipelineStages = [
-    { name: 'Received', count: 5, color: 'bg-navy' },
-    { name: 'Validating', count: 2, color: 'bg-brown' },
-    { name: 'Awaiting Approval', count: 3, color: 'bg-warning' },
-    { name: 'Approved', count: 8, color: 'bg-success' },
-    { name: 'Synced', count: 142, color: 'bg-neutral-medium-gray' },
+    { name: 'Received', count: 12, color: 'bg-navy' },
+    { name: 'Processing', count: 5, color: 'bg-brown' },
+    { name: 'Awaiting Review', count: 5, color: 'bg-warning' },
+    { name: 'Completed', count: 83, color: 'bg-success' },
+    { name: 'Synced', count: 1247, color: 'bg-neutral-medium-gray' },
   ];
 
   const exceptions = [
-    { issue: 'Supplier name doesn\'t match records', invoice: 'INV-2024-0156', action: 'Review' },
-    { issue: 'Invoice amount exceeds approval threshold', invoice: 'INV-2024-0157', action: 'Review' },
-    { issue: 'Missing purchase order number', invoice: 'INV-2024-0158', action: 'Review' },
+    { issue: 'Low confidence score on extracted field', item: 'DOC-2024-0892', action: 'Review' },
+    { issue: 'CRM record merge conflict detected', item: 'CRM-2024-0341', action: 'Review' },
+    { issue: 'Data pipeline source timeout - retry scheduled', item: 'PIPE-2024-0156', action: 'Review' },
   ];
 
   return (
@@ -50,8 +50,8 @@ export default function DashboardPreview() {
           {recentActivity.map((activity, index) => (
             <div key={index} className="flex items-center justify-between py-3 border-b border-neutral-light-gray last:border-0">
               <div className="flex-1">
-                <div className="font-medium text-navy">{activity.supplier}</div>
-                <div className="text-sm text-neutral-medium-gray">{activity.amount}</div>
+                <div className="font-medium text-navy">{activity.source}</div>
+                <div className="text-sm text-neutral-medium-gray">{activity.detail}</div>
               </div>
               <div className="flex items-center gap-4">
                 <span className={`text-sm font-medium ${activity.statusColor}`}>{activity.status}</span>
@@ -85,7 +85,7 @@ export default function DashboardPreview() {
             <div key={index} className="flex items-start justify-between py-3 border-b border-neutral-light-gray last:border-0">
               <div className="flex-1">
                 <div className="font-medium text-navy mb-1">{exception.issue}</div>
-                <div className="text-sm text-neutral-medium-gray">{exception.invoice}</div>
+                <div className="text-sm text-neutral-medium-gray">{exception.item}</div>
               </div>
               <button className="px-4 py-2 text-sm font-medium text-navy border border-navy rounded-lg hover:bg-navy hover:text-white transition-colors">
                 {exception.action}

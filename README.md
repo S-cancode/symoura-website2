@@ -1,10 +1,10 @@
 # Symoura Website
 
-Finance Automation Agency - B2B Trust-Building Website
+AI Automation Agency - B2B Trust-Building Website
 
 ## Overview
 
-This is the marketing website for Symoura, a finance automation agency helping UK SMEs automate their invoice processing workflows.
+This is the marketing website for Symoura, an AI automation agency helping businesses automate their workflows with custom AI solutions.
 
 ## Tech Stack
 

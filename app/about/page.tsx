@@ -6,7 +6,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 
 export const metadata: Metadata = {
   title: 'About - Symoura',
-  description: 'Learn about Symoura and our founder. Expert in finance automation and practical problem-solving for UK SMEs.',
+  description: 'Learn about Symoura. Experts in AI automation and practical problem-solving for businesses of all sizes.',
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-hero md:text-hero-lg mb-6">About Symoura</h1>
               <p className="text-lg md:text-xl text-neutral-medium-gray leading-relaxed">
-                Custom finance automation for UK SMEs that actually fits how your team works
+                Custom AI automation for businesses that actually fits how your team works
               </p>
             </div>
           </AnimatedSection>
@@ -27,7 +27,7 @@ export default function AboutPage() {
       </section>
 
       {/* The Problem We Solve */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto">
@@ -35,10 +35,10 @@ export default function AboutPage() {
                 <h2 className="mb-6">Why Symoura Exists</h2>
                 <div className="space-y-4 text-neutral-medium-gray">
                   <p>
-                    Most invoice automation solutions are built for enterprises—complex, expensive, and require months of implementation. Small and mid-sized businesses get left with manual processes that break down as they grow.
+                    Most automation solutions are built for enterprises - complex, expensive, and requiring months of implementation. Growing businesses get left with manual processes that break down as they scale.
                   </p>
                   <p>
-                    Symoura fills that gap. We build custom automation workflows tailored to how your finance team actually works, using tools that give you control and transparency.
+                    Symoura fills that gap. We build custom AI automation workflows tailored to how your team actually works, using tools that give you control and transparency.
                   </p>
                   <p className="font-medium text-navy">
                     No bloated software. No vendor lock-in. Just automation that solves your specific pain points.
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 <Card>
                   <h3 className="text-xl mb-4">Custom, Not Templates</h3>
                   <p className="text-neutral-medium-gray">
-                    Every workflow is built from scratch around your process—not forcing you into a pre-built template that doesn&apos;t quite fit.
+                    Every workflow is built from scratch around your process - not forcing you into a pre-built template that doesn&apos;t quite fit.
                   </p>
                 </Card>
               </AnimatedSection>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 <Card>
                   <h3 className="text-xl mb-4">Your Systems, Connected</h3>
                   <p className="text-neutral-medium-gray">
-                    We integrate with what you already use: Gmail, Xero, QuickBooks, Google Sheets. No platform switching required.
+                    We integrate with what you already use: CRMs, email, databases, spreadsheets, Slack, and more. No platform switching required.
                   </p>
                 </Card>
               </AnimatedSection>
@@ -88,7 +88,7 @@ export default function AboutPage() {
       </section>
 
       {/* Founder Story */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto">
@@ -96,16 +96,16 @@ export default function AboutPage() {
               <Card>
                 <div className="space-y-6 text-neutral-medium-gray">
                   <p>
-                    Symoura is built by a team of founders who understand both finance operations and the practical side of automation.
+                    Symoura is built by a team of founders who understand both business operations and the practical side of AI automation.
                   </p>
                   <p>
-                    After seeing too many businesses struggle with manual invoice processing—not because solutions don&apos;t exist, but because existing solutions are either too complex or too expensive—we decided to build something different.
+                    After seeing too many businesses struggle with manual processes - not because solutions don&apos;t exist, but because existing solutions are either too complex or too expensive - we decided to build something different.
                   </p>
                   <p>
-                    We specialize in workflow automation, AI-powered data extraction, and connecting systems that weren&apos;t designed to talk to each other. The focus is on practical, maintainable solutions that your finance team can actually use.
+                    We specialize in workflow automation, AI-powered data processing, and connecting systems that weren&apos;t designed to talk to each other. The focus is on practical, maintainable solutions that your team can actually use.
                   </p>
                   <p className="font-medium text-navy">
-                    No sales team, no account managers—just direct work with a team who will build and support your workflow.
+                    No sales team, no account managers - just direct work with a team who will build and support your workflow.
                   </p>
                 </div>
               </Card>
@@ -146,22 +146,22 @@ export default function AboutPage() {
               </AnimatedSection>
               <AnimatedSection delay={0.2}>
                 <Card>
-                  <h3 className="mb-4">AI Data Extraction</h3>
+                  <h3 className="mb-4">AI-Powered Intelligence</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  Modern AI models extract invoice data with high accuracy:
+                  Modern AI models power intelligent automation across your workflows:
                 </p>
                 <ul className="space-y-2 text-sm text-neutral-medium-gray">
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Handles various invoice formats without training</span>
+                    <span>Handles data extraction, classification, and natural language understanding</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Learns from corrections to improve over time</span>
+                    <span>Adapts to your specific use case without extensive training</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Validation rules catch errors before entry</span>
+                    <span>Validation and confidence scoring ensure accuracy</span>
                   </li>
                 </ul>
                 </Card>
@@ -175,37 +175,37 @@ export default function AboutPage() {
                 <ul className="space-y-2 text-sm text-neutral-medium-gray">
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Email providers (Gmail, Outlook)</span>
+                    <span>CRMs (HubSpot, Salesforce, Pipedrive)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Accounting systems (Xero, QuickBooks, Sage)</span>
+                    <span>Communication tools (Slack, Email, Teams)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Spreadsheets (Google Sheets, Excel)</span>
+                    <span>Databases, spreadsheets, and custom APIs</span>
                   </li>
                 </ul>
                 </Card>
               </AnimatedSection>
               <AnimatedSection delay={0.4}>
                 <Card>
-                  <h3 className="mb-4">Audit & Compliance</h3>
+                  <h3 className="mb-4">Monitoring & Observability</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  Every workflow includes built-in audit trails:
+                  Every workflow includes built-in monitoring:
                 </p>
                 <ul className="space-y-2 text-sm text-neutral-medium-gray">
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Timestamped logs of every action</span>
+                    <span>Timestamped logs of every action and decision</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Who approved what and when</span>
+                    <span>Real-time performance metrics and alerting</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-brown mt-0.5">•</span>
-                    <span>Full history of invoice processing</span>
+                    <span>Full history of all automated processes</span>
                   </li>
                 </ul>
                 </Card>
@@ -216,7 +216,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <AnimatedSection>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <Card>
                   <h3 className="text-xl mb-3">Control Stays With You</h3>
                   <p className="text-neutral-medium-gray">
-                    Your finance team makes the decisions. Automation handles the repetitive work, but humans stay in charge.
+                    Your team makes the decisions. Automation handles the repetitive work, but humans stay in charge.
                   </p>
                 </Card>
               </AnimatedSection>
@@ -253,7 +253,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="section-spacing bg-navy">
+      <section className="section-spacing cta-band">
         <div className="container-custom text-center">
           <AnimatedSection>
             <h2 className="text-white mb-6">Get in Touch</h2>
@@ -265,7 +265,7 @@ export default function AboutPage() {
                 Book a Discovery Call
               </Button>
               <a
-                href="mailto:team@symoura.com"
+                href="mailto:shivan@symoura.co.uk"
                 className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-navy rounded-lg font-medium transition-all duration-200"
               >
                 Email Us

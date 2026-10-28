@@ -8,169 +8,169 @@ import { XMarkIcon, CheckIcon } from '@heroicons/react/24/solid';
 
 export const metadata: Metadata = {
   title: "Who It's For - Symoura",
-  description: 'See if Symoura invoice automation fits your business. Real scenarios from UK SMEs with 10-100 employees.',
+  description: 'See if Symoura AI automation fits your business. Real scenarios from companies across industries.',
 };
 
 export default function WhoItsForPage() {
   const useCases = [
     {
-      title: 'Growing E-commerce Business',
-      companySize: '25 employees',
-      invoiceVolume: '100+ invoices/month',
-      problem: 'Processing supplier invoices manually was consuming 10+ hours per week. Finance manager spending most of their time on data entry instead of strategic work.',
+      title: 'Healthcare Provider',
+      companySize: '40 employees',
+      processVolume: '500+ patient forms/month',
+      problem: 'Staff spending 15+ hours per week manually processing patient intake forms, updating EHR systems, and coordinating referrals across departments.',
       painPoints: [
-        'Manual data entry from PDF attachments',
-        'No standardized approval process',
-        'Frequent payment delays due to lost invoices',
-        'Month-end reconciliation taking 2-3 days',
+        'Manual transcription of paper and PDF forms into digital records',
+        'Referral coordination via email and phone calls',
+        'Delayed patient onboarding due to data entry backlog',
+        'Compliance documentation assembled manually for audits',
       ],
-      solution: 'Automated workflow extracts invoice data from emails, validates against purchase orders, routes to department heads for approval, and syncs to Xero.',
+      solution: 'AI document processing extracts patient data from intake forms automatically. Referral workflows route to the correct department with all required context. Compliance reports generated on schedule.',
       results: [
-        '80% reduction in processing time',
-        'Zero lost invoices',
-        'Month-end reconciliation cut to 4 hours',
-        'Finance manager freed up for cashflow planning',
+        '85% reduction in form processing time',
+        'Patient onboarding cut from 3 days to same-day',
+        'Zero missed referrals in 6 months',
+        'Audit-ready compliance documentation generated automatically',
+      ],
+    },
+    {
+      title: 'E-commerce Company',
+      companySize: '30 employees',
+      processVolume: '2,000+ customer interactions/month',
+      problem: 'Support team overwhelmed with repetitive order status queries, return requests, and product questions. Average response time exceeding 8 hours.',
+      painPoints: [
+        'Support agents answering the same questions repeatedly',
+        'No after-hours customer support coverage',
+        'Complex queries not routed to the right specialist',
+        'Customer satisfaction scores declining as volume grows',
+      ],
+      solution: 'AI chatbot handles routine queries (order status, returns, FAQs) instantly, 24/7. Complex issues routed to the right team member with full context. CRM updated automatically after every interaction.',
+      results: [
+        '70% of routine queries resolved without human intervention',
+        'Average response time reduced from 8 hours to under 2 minutes',
+        'Support team freed to handle complex, high-value interactions',
+        'Customer satisfaction scores increased by 35%',
       ],
     },
     {
       title: 'Professional Services Firm',
-      companySize: '45 employees',
-      invoiceVolume: '75 invoices/month',
-      problem: 'Approval bottlenecks causing payment delays. Partners traveling frequently, invoices sitting in email inboxes for weeks.',
-      painPoints: [
-        'Approval delays causing supplier relationship issues',
-        'No visibility into pending approvals',
-        'Manual forwarding of invoices between partners',
-        'Missing invoices discovered only when suppliers chase payment',
-      ],
-      solution: 'Smart routing based on project codes and amounts. Escalation rules kick in after 48 hours. Mobile-friendly approval interface.',
-      results: [
-        'Average approval time reduced from 12 days to 2 days',
-        'Real-time visibility into approval pipeline',
-        'Supplier complaints eliminated',
-        'Early payment discounts now achievable',
-      ],
-    },
-    {
-      title: 'Manufacturing SME',
-      companySize: '60 employees',
-      invoiceVolume: '150+ invoices/month',
-      problem: 'Mix of email, paper, and PDF invoices creating data inconsistency. Multiple suppliers, multiple formats, high error rate.',
-      painPoints: [
-        'Invoices received via email, post, and supplier portals',
-        'Different data formats causing entry errors',
-        'Duplicate invoice processing',
-        'Supplier disputes due to payment errors',
-      ],
-      solution: 'Unified workflow handles all formats. OCR for scanned documents. Duplicate detection. Three-way matching with purchase orders.',
-      results: [
-        'Single point of entry for all invoice types',
-        'Error rate reduced from 8% to under 2%',
-        'Zero duplicate payments in 6 months',
-        'Audit trail satisfies compliance requirements',
-      ],
-    },
-    {
-      title: 'Tech Startup (Scale-up Phase)',
-      companySize: '35 employees',
-      invoiceVolume: '50 invoices/month (growing fast)',
-      problem: 'Rapid growth breaking manual processes. Founder still approving all invoices despite having finance manager.',
-      painPoints: [
-        'Founder bottleneck as company scales',
-        'No approval delegation structure',
-        'Finance manager lacking tools to own AP process',
-        'Manual process won\'t scale to 100+ invoices/month',
-      ],
-      solution: 'Tiered approval rules based on amount thresholds. Finance manager handles <£500, department heads <£2,000, founder only >£2,000.',
-      results: [
-        'Founder approval workload reduced by 85%',
-        'Finance manager empowered to own process',
-        'Scalable system ready for growth',
-        'Clear audit trail for investor reporting',
-      ],
-    },
-    {
-      title: 'Multi-Site Retail Business',
-      companySize: '80 employees across 5 locations',
-      invoiceVolume: '200+ invoices/month',
-      problem: 'Centralized finance team processing invoices from multiple sites. No visibility into which location incurred costs.',
-      painPoints: [
-        'Site managers forwarding invoices via email',
-        'No cost center tracking at invoice level',
-        'Finance team chasing site managers for approval',
-        'Budget reporting delayed and manual',
-      ],
-      solution: 'Invoices tagged by site automatically. Site-specific approval workflows. Real-time cost center reporting.',
-      results: [
-        'Automated cost center allocation',
-        'Site managers approve via dashboard',
-        'Budget tracking now real-time',
-        'Month-end reporting automated',
-      ],
-    },
-    {
-      title: 'Construction Company',
       companySize: '50 employees',
-      invoiceVolume: '120 invoices/month',
-      problem: 'Project-based invoicing requiring matching to specific jobs. Manual allocation error-prone and time-consuming.',
+      processVolume: '200+ active client engagements',
+      problem: 'CRM data decaying fast. Consultants not logging activities, leads falling through the cracks, pipeline reports unreliable for forecasting.',
       painPoints: [
-        'Invoices must be allocated to project codes',
-        'Manual matching of invoices to purchase orders',
-        'Project cost tracking always out of date',
-        'Client billing delays due to missing invoice data',
+        'Sales reps not updating CRM after meetings and calls',
+        'Lead follow-ups missed or delayed',
+        'Pipeline reporting requires manual data gathering',
+        'No automated lead scoring or prioritization',
       ],
-      solution: 'Workflow extracts project codes from invoices. Matches to purchase orders. Updates project cost tracking in real-time.',
+      solution: 'Automated CRM workflows capture activities from email and calendar. AI scores and prioritizes leads. Follow-up sequences triggered automatically based on engagement signals.',
       results: [
-        'Automated project cost allocation',
-        'Real-time project profitability tracking',
-        'Faster client billing (invoices no longer waiting for cost data)',
-        'Reduced disputes with subcontractors',
+        'CRM data accuracy improved from 40% to 95%',
+        'Lead response time cut from 2 days to 30 minutes',
+        'Pipeline forecasting now real-time and reliable',
+        '25% increase in conversion rate from automated follow-ups',
+      ],
+    },
+    {
+      title: 'Logistics Company',
+      companySize: '75 employees',
+      processVolume: '10,000+ data records/week',
+      problem: 'Operations team spending hours each day manually pulling data from carrier systems, warehouse tools, and spreadsheets to build status reports and update dashboards.',
+      painPoints: [
+        'Data scattered across 6+ disconnected systems',
+        'Manual CSV exports and spreadsheet consolidation',
+        'Reports always out of date by the time they are compiled',
+        'No single source of truth for operational metrics',
+      ],
+      solution: 'Automated data pipelines pull from all source systems on schedule, transform and normalize the data, and push to a unified dashboard. Alerts trigger when KPIs cross thresholds.',
+      results: [
+        'Real-time operational dashboard replacing manual reports',
+        '15 hours per week freed from manual data compilation',
+        'Anomalies detected automatically instead of days later',
+        'Single source of truth for all operational metrics',
+      ],
+    },
+    {
+      title: 'Legal Practice',
+      companySize: '25 employees',
+      processVolume: '300+ documents/month',
+      problem: 'Paralegals spending most of their time on document intake, classification, and extracting key terms from contracts instead of substantive legal work.',
+      painPoints: [
+        'Manual review and classification of incoming documents',
+        'Key clause extraction done by reading every page',
+        'Version control issues across document drafts',
+        'Client intake forms processed manually into case management system',
+      ],
+      solution: 'AI classifies incoming documents and extracts key data points (dates, parties, clauses, amounts). Client intake forms auto-populate the case management system. Document routing based on case type and urgency.',
+      results: [
+        'Document processing time reduced by 75%',
+        'Paralegal time redirected to substantive legal research',
+        'Zero missed deadlines from automated date extraction and alerts',
+        'Client onboarding time cut in half',
+      ],
+    },
+    {
+      title: 'Marketing Agency',
+      companySize: '20 employees',
+      processVolume: '50+ active client campaigns',
+      problem: 'Account managers juggling manual reporting, client onboarding workflows, and campaign status updates across multiple platforms with no central coordination.',
+      painPoints: [
+        'Weekly client reports assembled manually from 4+ platforms',
+        'New client onboarding checklist managed via spreadsheet',
+        'Campaign approvals and feedback loops via email chains',
+        'No automated alerting when campaign metrics drop',
+      ],
+      solution: 'Workflow automation orchestrates client onboarding with automated task creation and notifications. Data pipelines aggregate campaign metrics for auto-generated reports. AI monitors performance and alerts the team when action is needed.',
+      results: [
+        'Client reporting time reduced from 5 hours to 30 minutes per week',
+        'Onboarding time cut from 2 weeks to 3 days',
+        'Campaign issues flagged automatically, not discovered in weekly reviews',
+        'Account managers handle 40% more clients without additional headcount',
       ],
     },
   ];
 
   const idealProfile = {
     companySize: [
-      '10-100 employees',
-      'Growth-stage or scaling SME',
-      'Multiple departments or locations',
+      'Businesses of any size with operational bottlenecks',
+      'Growth-stage or scaling companies',
+      'Teams with repetitive, high-volume processes',
     ],
-    invoiceVolume: [
-      '50+ invoices per month',
-      'Multiple suppliers',
-      'Mix of formats (email, PDF, paper)',
+    processVolume: [
+      'High-volume repetitive tasks (data entry, routing, reporting)',
+      'Multiple disconnected tools and systems',
+      'Manual handoffs between teams or departments',
     ],
     currentProcess: [
-      'Manual data entry into Excel or accounting system',
-      'Email-based approval processes',
-      'Disconnected systems requiring duplicate entry',
+      'Manual data entry between systems',
+      'Email-based approvals and task routing',
+      'Disconnected tools requiring duplicate work',
     ],
     painPoints: [
-      'Finance team stretched thin',
-      'High error rates or reconciliation issues',
-      'Approval bottlenecks causing delays',
-      'Lack of visibility into invoice status',
-      'Manual processes breaking down as company grows',
+      'Teams stretched thin on low-value work',
+      'High error rates from manual processes',
+      'Bottlenecks slowing down operations',
+      'No visibility into process status or performance',
+      'Manual processes breaking down as the business grows',
     ],
   };
 
   return (
     <>
       <Hero
-        headline="Is invoice automation right for your business?"
-        subheadline="Common scenarios where UK SMEs struggle with manual invoice processing—and how custom automation can help."
+        headline="Is AI automation right for your business?"
+        subheadline="Common scenarios where businesses struggle with manual processes - and how custom AI automation solves them."
         primaryCTA={{ text: 'Book a Discovery Call', href: '/discovery-call' }}
         secondaryCTA={{ text: 'See How It Works', href: '/how-it-works' }}
       />
 
       {/* Ideal Profile */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="mb-6">Who We Work With</h2>
               <p className="text-lg text-neutral-medium-gray max-w-3xl mx-auto">
-                Symoura is built for UK SMEs where manual invoice processing is consuming too much time
+                Symoura is built for businesses where manual processes are consuming too much time and holding back growth
               </p>
             </div>
           </AnimatedSection>
@@ -191,9 +191,9 @@ export default function WhoItsForPage() {
                   </ul>
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-navy mb-2">Invoice Volume:</p>
+                  <p className="text-sm font-semibold text-navy mb-2">Process Volume:</p>
                   <ul className="space-y-1">
-                    {idealProfile.invoiceVolume.map((item, idx) => (
+                    {idealProfile.processVolume.map((item, idx) => (
                       <li key={idx} className="text-sm text-neutral-medium-gray flex items-start gap-2">
                         <span className="text-brown mt-0.5">•</span>
                         <span>{item}</span>
@@ -244,7 +244,7 @@ export default function WhoItsForPage() {
             <div className="text-center mb-16">
               <h2 className="mb-6">Common Scenarios We Solve</h2>
               <p className="text-lg text-neutral-medium-gray max-w-3xl mx-auto">
-                Examples of businesses that would benefit from automated invoice processing
+                Real examples of businesses that benefit from custom AI automation
               </p>
             </div>
           </AnimatedSection>
@@ -259,7 +259,7 @@ export default function WhoItsForPage() {
                       {useCase.companySize}
                     </span>
                     <span className="bg-neutral-bg text-navy px-3 py-1 rounded-full font-medium">
-                      {useCase.invoiceVolume}
+                      {useCase.processVolume}
                     </span>
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function WhoItsForPage() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold text-navy mb-3">How We'd Help</h4>
+                    <h4 className="font-semibold text-navy mb-3">How We&apos;d Help</h4>
                     <p className="text-neutral-medium-gray mb-4">{useCase.solution}</p>
                     <h4 className="font-semibold text-navy mb-3 mt-6">Expected Benefits</h4>
                     <ul className="space-y-2">
@@ -300,12 +300,12 @@ export default function WhoItsForPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-spacing bg-navy">
+      <section className="section-spacing cta-band">
         <div className="container-custom text-center">
           <AnimatedSection>
             <h2 className="text-white mb-6">Does This Sound Familiar?</h2>
             <p className="text-lg text-neutral-light-gray mb-10 max-w-3xl mx-auto">
-              If your finance team is spending hours each week on manual invoice processing, and your current process is struggling to keep up with growth, let&apos;s talk.
+              If your team is spending hours on manual processes that should be automated, and those processes are struggling to keep up with growth, let&apos;s talk.
             </p>
             <Button href="/discovery-call" variant="outline">
               Get Started

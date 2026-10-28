@@ -5,41 +5,41 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 
 export const metadata: Metadata = {
   title: 'Book Discovery Call - Symoura',
-  description: '30-minute conversation to map your invoice workflow and explore if automation makes sense for your team.',
+  description: '30-minute conversation to map your workflows and explore if AI automation makes sense for your team.',
 };
 
 export default function DiscoveryCallPage() {
   const whatToExpect = [
     {
       title: 'Map Your Current Process',
-      description: 'Walk through how invoices flow through your organization today—from receipt to payment.',
+      description: 'Walk through how work flows through your organization today - from input to output, across tools and teams.',
     },
     {
       title: 'Identify Pain Points',
-      description: 'Pinpoint where the manual work creates bottlenecks, errors, or consumes too much time.',
+      description: 'Pinpoint where manual work creates bottlenecks, errors, or consumes too much of your team\'s time.',
     },
     {
       title: 'Explore Integration Points',
-      description: 'Discuss your existing systems (email, accounting software, spreadsheets) and how they could connect.',
+      description: 'Discuss your existing systems (CRM, email, databases, spreadsheets) and how they could connect.',
     },
     {
       title: 'Assess Fit',
-      description: 'Determine if custom automation makes sense for your volume, team size, and budget.',
+      description: 'Determine if custom AI automation makes sense for your volume, team size, and budget.',
     },
   ];
 
   const whoShouldAttend = [
     {
-      role: 'Finance Manager',
-      why: 'Day-to-day owner of invoice processing, understands current pain points',
+      role: 'Operations Lead',
+      why: 'Day-to-day owner of the process, understands current pain points and workflow details',
     },
     {
-      role: 'Financial Controller',
-      why: 'Oversees finance operations, can evaluate process improvements',
+      role: 'Department Head',
+      why: 'Oversees the team affected, can evaluate process improvements and prioritize',
     },
     {
-      role: 'CFO / Finance Director',
-      why: 'Budget holder, strategic decision maker on finance tooling',
+      role: 'Decision Maker',
+      why: 'Budget holder or executive sponsor who can greenlight automation investments',
     },
   ];
 
@@ -52,7 +52,7 @@ export default function DiscoveryCallPage() {
             <div className="text-center max-w-4xl mx-auto mb-16">
               <h1 className="text-hero md:text-hero-lg mb-6">Book a Discovery Call</h1>
               <p className="text-lg md:text-xl text-neutral-medium-gray leading-relaxed">
-                30-minute conversation to map your current invoice workflow and explore if automation makes sense for your team.
+                30-minute conversation to map your current workflows and explore if AI automation makes sense for your team.
               </p>
             </div>
           </AnimatedSection>
@@ -64,10 +64,10 @@ export default function DiscoveryCallPage() {
                 <div className="text-center py-12">
                   <h2 className="mb-4">Get in Touch</h2>
                   <p className="text-neutral-medium-gray mb-8">
-                    Email us to schedule a 30-minute discovery call. We&apos;ll discuss your invoice workflow and explore how automation could help your team.
+                    Email us to schedule a 30-minute discovery call. We&apos;ll discuss your workflows and explore how AI automation could help your team.
                   </p>
                   <a
-                    href="mailto:team@symoura.com?subject=Discovery Call Request&body=Hi, I'd like to schedule a discovery call to discuss invoice automation.%0D%0A%0D%0ACompany:%0D%0AMonthly invoice volume:%0D%0APreferred time:%0D%0A"
+                    href="mailto:shivan@symoura.co.uk?subject=Discovery Call Request&body=Hi, I'd like to schedule a discovery call to discuss AI automation.%0D%0A%0D%0ACompany:%0D%0AMain process to automate:%0D%0APreferred time:%0D%0A"
                     className="inline-flex items-center justify-center px-8 py-3 bg-navy text-white rounded-lg font-medium hover:bg-navy-dark transition-all duration-200 shadow-sm hover:shadow-md"
                   >
                     Email Us to Schedule
@@ -80,7 +80,7 @@ export default function DiscoveryCallPage() {
       </section>
 
       {/* What to Expect */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <AnimatedSection>
@@ -133,7 +133,7 @@ export default function DiscoveryCallPage() {
             <AnimatedSection delay={0.4}>
               <div className="mt-8 text-center">
                 <p className="text-neutral-medium-gray">
-                  Ideally, bring 1-2 people who understand your current invoice process and can make decisions about automation investments.
+                  Ideally, bring 1-2 people who understand your current workflow and can make decisions about automation investments.
                 </p>
               </div>
             </AnimatedSection>
@@ -142,7 +142,7 @@ export default function DiscoveryCallPage() {
       </section>
 
       {/* No Pressure Promise */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-3xl mx-auto">
@@ -150,10 +150,10 @@ export default function DiscoveryCallPage() {
               <h2 className="text-center mb-6">No Sales Pressure</h2>
               <div className="space-y-4 text-neutral-medium-gray text-center">
                 <p>
-                  This call is about understanding your process and seeing if automation is a good fit. If it&apos;s not, I&apos;ll tell you.
+                  This call is about understanding your process and seeing if automation is a good fit. If it&apos;s not, we&apos;ll tell you.
                 </p>
                 <p>
-                  You&apos;ll walk away with a clear picture of what custom automation could look like for your team—whether you work with Symoura or not.
+                  You&apos;ll walk away with a clear picture of what custom automation could look like for your team - whether you work with Symoura or not.
                 </p>
               </div>
               </Card>
@@ -177,19 +177,19 @@ export default function DiscoveryCallPage() {
                   <ul className="space-y-2 ml-6">
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Estimate your monthly invoice volume (rough number is fine)</span>
+                      <span>Estimate how much time your team spends on the process you want to automate (rough number is fine)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Think about where invoices get stuck in your current process</span>
+                      <span>Think about where work gets stuck or where errors happen most often</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Note what accounting system you use (Xero, QuickBooks, Sage, etc.)</span>
+                      <span>Note what tools and systems you currently use (CRM, email, spreadsheets, databases, etc.)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Consider who currently approves invoices and at what thresholds</span>
+                      <span>Consider what a successful outcome looks like for your team</span>
                     </li>
                   </ul>
                 </div>
@@ -202,11 +202,11 @@ export default function DiscoveryCallPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Understanding technical requirements—we&apos;ll figure that out together</span>
+                      <span>Understanding technical requirements - we&apos;ll figure that out together</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-brown mt-1">•</span>
-                      <span>Having a budget decided—we&apos;ll discuss pricing after understanding your needs</span>
+                      <span>Having a budget decided - we&apos;ll discuss pricing after understanding your needs</span>
                     </li>
                   </ul>
                 </div>

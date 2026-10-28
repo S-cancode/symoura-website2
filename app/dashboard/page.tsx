@@ -19,12 +19,12 @@ export default function DashboardPage() {
   const benefits = [
     {
       title: 'Full Audit Trail',
-      description: 'Every action timestamped and logged. See exactly who approved what and when.',
+      description: 'Every action timestamped and logged. See exactly what happened, when, and why.',
       icon: ClipboardDocumentCheckIcon,
     },
     {
       title: 'Proactive Alerts',
-      description: 'Get notified when invoices need attention or are stuck in the approval pipeline.',
+      description: 'Get notified when tasks need attention or are stuck in the pipeline.',
       icon: BellAlertIcon,
     },
     {
@@ -34,17 +34,17 @@ export default function DashboardPage() {
     },
     {
       title: 'Real-Time Visibility',
-      description: 'See processing status of every invoice in real-time, no more chasing updates.',
+      description: 'See the status of every automated process in real-time. No more chasing updates.',
       icon: EyeIcon,
     },
     {
       title: 'Exception Management',
-      description: 'Flagged invoices surface automatically with clear action items.',
+      description: 'Flagged items surface automatically with clear action items for your team.',
       icon: ExclamationTriangleIcon,
     },
     {
       title: 'Performance Metrics',
-      description: 'Track time saved, processing volume, and error rates month over month.',
+      description: 'Track time saved, processing volume, and success rates month over month.',
       icon: ChartBarIcon,
     },
   ];
@@ -52,20 +52,20 @@ export default function DashboardPage() {
   return (
     <>
       <Hero
-        headline="Complete visibility into your invoice processing"
-        subheadline="Every client gets access to a real-time dashboard showing exactly what's happening with their invoices—no black box, no guesswork."
+        headline="Complete visibility into your automated workflows"
+        subheadline="Every client gets access to a real-time dashboard showing exactly what's happening with their automation - no black box, no guesswork."
         primaryCTA={{ text: 'Book a Discovery Call', href: '/discovery-call' }}
         secondaryCTA={{ text: 'Learn How It Works', href: '/how-it-works' }}
       />
 
       {/* Dashboard Preview */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="mb-6">Your Control Center</h2>
               <p className="text-lg text-neutral-medium-gray max-w-3xl mx-auto">
-                This is what you&apos;ll see every day—a live view of your invoice processing workflow
+                This is what you&apos;ll see every day - a live view of your automated workflows
               </p>
             </div>
           </AnimatedSection>
@@ -103,7 +103,7 @@ export default function DashboardPage() {
       </section>
 
       {/* Dashboard Features Deep Dive */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto space-y-12">
             <AnimatedSection>
@@ -116,7 +116,7 @@ export default function DashboardPage() {
               <div>
                 <h3 className="text-2xl mb-4">Status Overview</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  At-a-glance metrics show you the health of your invoice processing. Track monthly volume, time saved, pending approvals, and exception rates.
+                  At-a-glance metrics show you the health of your automation. Track monthly volume, time saved, items needing review, and success rates.
                 </p>
                 <p className="text-neutral-medium-gray">
                   These numbers update in real-time, so you always know where things stand without digging through emails or spreadsheets.
@@ -128,10 +128,10 @@ export default function DashboardPage() {
               <div>
                 <h3 className="text-2xl mb-4">Recent Activity Feed</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  See every invoice as it moves through the system. Each entry shows the supplier, amount, current status, and how long ago the action occurred.
+                  See every task as it moves through the system. Each entry shows the source, type, current status, and how long ago the action occurred.
                 </p>
                 <p className="text-neutral-medium-gray">
-                  This feed acts as your audit trail—click any entry to see full details including who approved it, when data was extracted, and where it was synced.
+                  This feed acts as your audit trail - click any entry to see full details including what was processed, what decisions were made, and where data was routed.
                 </p>
               </div>
             </AnimatedSection>
@@ -140,10 +140,10 @@ export default function DashboardPage() {
               <div>
                 <h3 className="text-2xl mb-4">Processing Pipeline</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  Visual funnel shows how many invoices are at each stage: received, validating, awaiting approval, approved, and synced.
+                  Visual funnel shows how many items are at each stage: received, processing, awaiting review, completed, and synced.
                 </p>
                 <p className="text-neutral-medium-gray">
-                  Spot bottlenecks immediately—if 20 invoices are stuck in &quot;awaiting approval,&quot; you know where to focus attention.
+                  Spot bottlenecks immediately - if tasks are piling up at any stage, you know where to focus attention.
                 </p>
               </div>
             </AnimatedSection>
@@ -152,10 +152,10 @@ export default function DashboardPage() {
               <div>
                 <h3 className="text-2xl mb-4">Exception Handling</h3>
                 <p className="text-neutral-medium-gray mb-4">
-                  Invoices that require human review surface automatically with clear explanations: supplier name mismatch, amount threshold exceeded, missing PO number, etc.
+                  Items that require human review surface automatically with clear explanations: confidence score below threshold, data format mismatch, missing required field, etc.
                 </p>
                 <p className="text-neutral-medium-gray">
-                  Each exception includes a &quot;Review&quot; button that takes you to the invoice details where you can approve, reject, or adjust the automation rules.
+                  Each exception includes a &quot;Review&quot; button that takes you to the item details where you can approve, adjust, or update the automation rules.
                 </p>
               </div>
             </AnimatedSection>
@@ -172,13 +172,13 @@ export default function DashboardPage() {
                 <h2 className="mb-6">No Black Box</h2>
                 <div className="space-y-4 text-neutral-medium-gray">
                   <p>
-                    Unlike opaque AP automation platforms, you can see exactly how your workflow operates. The dashboard isn&apos;t just reporting—it&apos;s the control interface.
+                    Unlike opaque automation platforms, you can see exactly how your workflows operate. The dashboard isn&apos;t just reporting - it&apos;s the control interface.
                   </p>
                   <p>
-                    Want to see why an invoice was flagged? Click it and see the validation rule that triggered. Need to override an approval decision? You can do it directly from the dashboard.
+                    Want to see why an item was flagged? Click it and see the rule that triggered. Need to override an automation decision? You can do it directly from the dashboard.
                   </p>
                   <p className="font-medium text-navy">
-                    Your finance team stays in control. The automation handles the repetitive work, but you make the decisions.
+                    Your team stays in control. The automation handles the repetitive work, but you make the decisions.
                   </p>
                 </div>
               </Card>
@@ -188,10 +188,10 @@ export default function DashboardPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-spacing bg-navy">
+      <section className="section-spacing cta-band">
         <div className="container-custom text-center">
           <AnimatedSection>
-            <h2 className="text-white mb-6">See This for Your Invoices</h2>
+            <h2 className="text-white mb-6">See This for Your Workflows</h2>
             <p className="text-lg text-neutral-light-gray mb-10 max-w-3xl mx-auto">
               Book a discovery call to map your current workflow and see how a custom dashboard would work for your team.
             </p>

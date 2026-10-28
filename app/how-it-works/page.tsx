@@ -9,7 +9,7 @@ import { CheckIcon } from '@heroicons/react/24/solid';
 
 export const metadata: Metadata = {
   title: 'How It Works - Symoura',
-  description: 'Learn how Symoura automates invoice processing from email to accounting system with custom workflows.',
+  description: 'Learn how Symoura builds custom AI automation workflows - from discovery to deployment in 2-3 weeks.',
 };
 
 export default function HowItWorksPage() {
@@ -18,28 +18,28 @@ export default function HowItWorksPage() {
       number: '01',
       title: 'Discovery Call',
       duration: '30 minutes',
-      description: 'We map your current invoice flow, identify bottlenecks and requirements, and confirm integration points with your existing systems.',
+      description: 'We map your current workflows, identify bottlenecks and repetitive tasks, and confirm integration points with your existing systems.',
       deliverables: ['Process map of current workflow', 'List of integration requirements', 'Initial automation scope'],
     },
     {
       number: '02',
-      title: 'Workflow Design',
+      title: 'Solution Design',
       duration: '1 week',
-      description: 'Custom workflow that connects your email, spreadsheets, and accounting system. Approval logic tailored to your org structure.',
-      deliverables: ['Custom-built workflow', 'Integration setup', 'Approval rules configuration'],
+      description: 'Custom automation workflow connecting your tools and systems. AI logic, routing rules, and integration architecture tailored to your operations.',
+      deliverables: ['Custom-built automation workflow', 'Integration setup', 'Business rules configuration'],
     },
     {
       number: '03',
       title: 'Testing & Handoff',
       duration: '1 week',
-      description: 'Run test invoices through the system, train your team on monitoring and exceptions, and deploy to production.',
+      description: 'Run real data through the system, train your team on monitoring and exception handling, and deploy to production.',
       deliverables: ['Tested workflow', 'Team training session', 'Documentation and guides'],
     },
     {
       number: '04',
       title: 'Ongoing Support',
       duration: 'Optional',
-      description: 'Adjust rules as your process evolves, add integrations or new approval steps, and monthly check-ins.',
+      description: 'Adjust rules as your process evolves, add new integrations or automation steps, and monthly performance check-ins.',
       deliverables: ['Rule adjustments', 'New integrations', 'Performance monitoring'],
     },
   ];
@@ -55,20 +55,20 @@ export default function HowItWorksPage() {
   return (
     <>
       <Hero
-        headline="From invoice email to accounting system—automatically"
-        subheadline="See exactly how we build custom automation workflows that fit your finance team's process."
+        headline="From manual process to automated workflow - seamlessly"
+        subheadline="See exactly how we build custom AI automation solutions that fit your team's process."
         primaryCTA={{ text: 'Book a Discovery Call', href: '/discovery-call' }}
         secondaryCTA={{ text: 'View Dashboard', href: '/dashboard' }}
       />
 
       {/* Workflow Diagram */}
-      <section className="section-spacing bg-white">
+      <section className="section-spacing section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="mb-6">The Automated Process</h2>
               <p className="text-lg text-neutral-medium-gray max-w-3xl mx-auto">
-                Every invoice flows through the same reliable, transparent process
+                Every task flows through the same reliable, transparent process
               </p>
             </div>
           </AnimatedSection>
@@ -128,7 +128,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* What You Get */}
-      <section className="py-16 bg-white">
+      <section className="py-16 section-band">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-3xl mx-auto">
@@ -164,7 +164,7 @@ export default function HowItWorksPage() {
                     <ul className="space-y-2 ml-6">
                       <li className="flex items-start gap-2">
                         <span className="text-navy mt-1">•</span>
-                        <span>Full control over your workflow—no vendor lock-in</span>
+                        <span>Full control over your workflow - no vendor lock-in</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-navy mt-1">•</span>
@@ -172,20 +172,20 @@ export default function HowItWorksPage() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-navy mt-1">•</span>
-                        <span>Transparent processing—you can see exactly what happens at each step</span>
+                        <span>Transparent processing - you can see exactly what happens at each step</span>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h3 className="text-xl text-navy mb-3">AI Data Extraction</h3>
+                    <h3 className="text-xl text-navy mb-3">AI-Powered Intelligence</h3>
                     <p>
-                      Modern AI models extract invoice data with high accuracy, handling various formats and layouts without training.
+                      Modern AI models handle data extraction, classification, natural language understanding, and decision-making - adapting to your specific use case without extensive training.
                     </p>
                   </div>
                   <div>
                     <h3 className="text-xl text-navy mb-3">System Integrations</h3>
                     <p>
-                      Connect to your existing tools via APIs: Gmail, Xero, QuickBooks, Google Sheets, and more. No platform switching required.
+                      Connect to your existing tools via APIs: CRMs, email, databases, spreadsheets, Slack, and more. No platform switching required.
                     </p>
                   </div>
                 </div>
@@ -196,12 +196,12 @@ export default function HowItWorksPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="section-spacing bg-navy">
+      <section className="section-spacing cta-band">
         <div className="container-custom text-center">
           <AnimatedSection>
-            <h2 className="text-white mb-6">Ready to Automate Your Invoices?</h2>
+            <h2 className="text-white mb-6">Ready to Automate Your Workflows?</h2>
             <p className="text-lg text-neutral-light-gray mb-10 max-w-3xl mx-auto">
-              Book a discovery call to map your current process and see if automation is right for your team.
+              Book a discovery call to map your current process and see if AI automation is right for your team.
             </p>
             <Button href="/discovery-call" variant="outline">
               Book a Discovery Call
